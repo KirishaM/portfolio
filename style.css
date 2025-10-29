@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f8f9fa, #eef2ff);
+  color: #333;
+  overflow-x: hidden;
+}
+
+.hero {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 40px 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 25px auto;
+  padding: 25px 30px;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+h2 {
+  color: #5a67d8;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.skill-tags span {
+  background: linear-gradient(135deg, #805ad5, #6b46c1);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 25px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.95em;
+  transition: background 0.3s;
+}
+
+.skill-tags span:hover {
+  background: linear-gradient(135deg, #9f7aea, #553c9a);
+}
+
+.project {
+  border-left: 4px solid #6a11cb;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #6a11cb;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+}
